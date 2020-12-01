@@ -1,0 +1,956 @@
+{
+  "crawl-info" : {
+    "crawl-timestamp" : "2020-12-01 01:53:15.122",
+    "crawl-timestamp-instant" : 1606787595.122000000,
+    "database-version" : {
+      "product-name" : "HSQL Database Engine",
+      "product-version" : "2.5.1"
+    },
+    "jdbc-driver-version" : {
+      "product-name" : "HSQL Database Engine Driver",
+      "product-version" : "2.5.1"
+    },
+    "jvm-version" : {
+      "product-name" : "Azul Systems, Inc. OpenJDK 64-Bit Server VM",
+      "product-version" : "1.8.0_275-b01"
+    },
+    "operating-system-version" : {
+      "product-name" : "Linux",
+      "product-version" : "5.4.0-1031-azure"
+    },
+    "run-id" : "bad4122e-7d9c-439d-ae67-4fe73e2eb02b",
+    "schema-crawler-version" : {
+      "product-name" : "SchemaCrawler",
+      "product-version" : "16.11.6"
+    }
+  },
+  "lints" : [ {
+    "lint-id" : "f54a98e0-55d7-43c5-b875-3e52ae885f95",
+    "linter-id" : "schemacrawler.tools.linter.LinterColumnTypes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterColumnTypes@a50ae65",
+    "message" : "column with same name but different data types",
+    "object-name" : "catalog",
+    "object-type" : "catalog",
+    "severity" : "medium",
+    "value" : "STATE [CHARACTER, VARCHAR]"
+  }, {
+    "lint-id" : "b059ab1c-0d0c-4f5c-99be-5a59f0da5944",
+    "linter-id" : "schemacrawler.tools.linter.LinterColumnTypes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterColumnTypes@a50ae65",
+    "message" : "column with same name but different data types",
+    "object-name" : "catalog",
+    "object-type" : "catalog",
+    "severity" : "medium",
+    "value" : "FIRSTNAME [VARCHAR, PUBLIC.BOOKS.NAME_TYPE]"
+  }, {
+    "lint-id" : "4b07af96-d780-430f-91ce-a140db50a0ca",
+    "linter-id" : "schemacrawler.tools.linter.LinterColumnTypes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterColumnTypes@a50ae65",
+    "message" : "column with same name but different data types",
+    "object-name" : "catalog",
+    "object-type" : "catalog",
+    "severity" : "medium",
+    "value" : "LASTNAME [VARCHAR, PUBLIC.BOOKS.NAME_TYPE]"
+  }, {
+    "lint-id" : "00ba1a2f-6aa5-42f9-bff1-3d1e2dd4fe43",
+    "linter-id" : "schemacrawler.tools.linter.LinterColumnTypes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterColumnTypes@a50ae65",
+    "message" : "column with same name but different data types",
+    "object-name" : "catalog",
+    "object-type" : "catalog",
+    "severity" : "medium",
+    "value" : "UPDATE [CLOB, VARCHAR]"
+  }, {
+    "lint-id" : "8a634edb-bcef-4486-84d4-2809660d805b",
+    "linter-id" : "schemacrawler.tools.linter.LinterColumnTypes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterColumnTypes@a50ae65",
+    "message" : "column with same name but different data types",
+    "object-name" : "catalog",
+    "object-type" : "catalog",
+    "severity" : "medium",
+    "value" : "ID [BIGINT, INTEGER]"
+  }, {
+    "lint-id" : "d491bc1c-abf2-4b16-8548-b5285f486020",
+    "linter-id" : "schemacrawler.tools.linter.LinterColumnTypes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterColumnTypes@a50ae65",
+    "message" : "column with same name but different data types",
+    "object-name" : "catalog",
+    "object-type" : "catalog",
+    "severity" : "medium",
+    "value" : "DATA [CLOB, PUBLIC.BOOKS.VALID_STRING]"
+  }, {
+    "lint-id" : "7dd1b943-5010-46b0-8606-25684f3d0bb2",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableCycles",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableCycles@7a18e8d",
+    "message" : "cycles in table relationships",
+    "object-name" : "catalog",
+    "object-type" : "catalog",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.PUBLICATIONS, PUBLIC.FOR_LINT.WRITERS"
+  }, {
+    "lint-id" : "ac3ce40e-3f18-49c8-9c01-1e344589b8ad",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey@340b7ef6",
+    "message" : "primary key may not be a surrogate",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".REGIONS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "ad55c147-f172-4b39-8f49-2a87881e715b",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".REGIONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "f1a5e70a-4b9c-44c0-9ac1-e7f5d49abbda",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".REGIONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "CITY, STATE, POSTALCODE, COUNTRY"
+  }, {
+    "lint-id" : "c63e2262-e9a6-4940-88f0-7d4067432f66",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithPrimaryKeyNotFirst",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithPrimaryKeyNotFirst@30404dba",
+    "message" : "primary key not first",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".REGIONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "ea9bdfcd-0a90-4f62-b1a6-efd931698c00",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey@23ee75c5",
+    "message" : "no primary key",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALES",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "1267a9d6-2ac4-4e21-ade7-d667629657ff",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey@340b7ef6",
+    "message" : "primary key may not be a surrogate",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALES",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "17723cc4-cf84-4929-9be1-8d30a75f8cf7",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALES",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "889b48ad-7351-426d-8c4e-f3be4a9bd565",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALES",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "POSTALCODE, COUNTRY, BOOKID, PERIODENDDATE, TOTALAMOUNT, SALESDATAID"
+  }, {
+    "lint-id" : "39205c7f-cb1b-4936-9c68-c16ec5ad50d8",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey@23ee75c5",
+    "message" : "no primary key",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "eaf2e0da-5b3e-4f35-a2ab-06fc892d2f89",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey@340b7ef6",
+    "message" : "primary key may not be a surrogate",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "308fe43b-ee8f-4535-a273-f4d375caeeaf",
+    "linter-id" : "schemacrawler.tools.linter.LinterNullColumnsInIndex",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterNullColumnsInIndex@33abde31",
+    "message" : "unique index with nullable columns",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA.SYS_IDX_UQ_CUSTOMERS_10233"
+  }, {
+    "lint-id" : "f3be30f6-e10d-4005-bf47-4f6b2552cb0d",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns@6a969fb8",
+    "message" : "no non-nullable data columns",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "88a3f55e-02ef-4713-a881-5d009e63fe2c",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "64d4addb-b4af-4587-9060-18ddea5be830",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "05a4c6ad-571f-4b02-a262-c49a45ec7de6",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.\"PUBLISHER SALES\".SALESDATA",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "SALESDATAID, YEARLYAMOUNT"
+  }, {
+    "lint-id" : "829fc30f-bce5-42d4-9d73-68d153e9af45",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey@23ee75c5",
+    "message" : "no primary key",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "f1a080c4-aead-4494-a850-d61787df5745",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey@340b7ef6",
+    "message" : "primary key may not be a surrogate",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "7cb3b435-84d2-4dde-afcc-703cf82a9271",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns@6a969fb8",
+    "message" : "no non-nullable data columns",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "c1aad7f5-afc1-4a75-ab5b-11a3a3c46fce",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoIndexes@56da52a7",
+    "message" : "no indexes",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "0e6500da-a426-4710-8efa-821dd510d030",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames@6050462a",
+    "message" : "spaces in name, or reserved word",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "1bd3b27a-c905-49ee-982e-87c6b97de312",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames@6050462a",
+    "message" : "spaces in name, or reserved word",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "Global Count"
+  }, {
+    "lint-id" : "45e21f19-40db-4392-ae9c-35e221e60408",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames@6050462a",
+    "message" : "spaces in name, or reserved word",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "UPDATE"
+  }, {
+    "lint-id" : "7a950b7e-15b6-4823-98c4-69aeefb52e86",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "3f0fd158-bdba-4ade-bbb7-fe67e14a47df",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "Global Count, UPDATE"
+  }, {
+    "lint-id" : "931aa3ef-3e77-4861-8d6f-b648a4d1ac4e",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns",
+    "object-name" : "PUBLIC.BOOKS.AUTHORS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.BOOKS.AUTHORS.ADDRESS1, PUBLIC.BOOKS.AUTHORS.ADDRESS2"
+  }, {
+    "lint-id" : "381ff6f4-8a68-450f-a817-8ef8a6012ad9",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.AUTHORS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, FIRSTNAME, LASTNAME, ADDRESS1, ADDRESS2, CITY, STATE, POSTALCODE, COUNTRY"
+  }, {
+    "lint-id" : "31a47b38-4505-4e52-9192-3543d53dee93",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.AUTHORSLIST",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "cd2ae2cc-3f01-4076-86dd-e60737eff893",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.AUTHORSLIST",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, FIRSTNAME, LASTNAME"
+  }, {
+    "lint-id" : "c3affb43-1696-45d3-ac23-0af4aa180034",
+    "linter-id" : "schemacrawler.tools.linter.LinterRedundantIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterRedundantIndexes@273842a6",
+    "message" : "redundant index",
+    "object-name" : "PUBLIC.BOOKS.BOOKAUTHORS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "PUBLIC.BOOKS.BOOKAUTHORS.SYS_IDX_SYS_FK_10128_10132"
+  }, {
+    "lint-id" : "601a6e55-507d-45de-b930-83bec2a5c07a",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey@23ee75c5",
+    "message" : "no primary key",
+    "object-name" : "PUBLIC.BOOKS.BOOKAUTHORS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "0992b7b5-f2ff-4e44-8328-1ffaf294abd7",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey@340b7ef6",
+    "message" : "primary key may not be a surrogate",
+    "object-name" : "PUBLIC.BOOKS.BOOKAUTHORS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "6eca0a0f-10a2-4106-b6b5-014d4d293d5d",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.BOOKAUTHORS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "BOOKID, AUTHORID, SOMEDATA"
+  }, {
+    "lint-id" : "a322a2cf-485d-43c5-99b7-7df3c46c1989",
+    "linter-id" : "schemacrawler.tools.linter.LinterRedundantIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterRedundantIndexes@273842a6",
+    "message" : "redundant index",
+    "object-name" : "PUBLIC.BOOKS.BOOKS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "PUBLIC.BOOKS.BOOKS.SYS_IDX_FK_PREVIOUSEDITION_10123"
+  }, {
+    "lint-id" : "c3a28d2f-be3b-49ce-8021-be2677127661",
+    "linter-id" : "schemacrawler.tools.linter.LinterRedundantIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterRedundantIndexes@273842a6",
+    "message" : "redundant index",
+    "object-name" : "PUBLIC.BOOKS.BOOKS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "PUBLIC.BOOKS.BOOKS.SYS_IDX_U_PREVIOUSEDITION_10125"
+  }, {
+    "lint-id" : "22b61f17-9425-405e-a856-6d1adc742711",
+    "linter-id" : "schemacrawler.tools.linter.LinterNullColumnsInIndex",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterNullColumnsInIndex@33abde31",
+    "message" : "unique index with nullable columns",
+    "object-name" : "PUBLIC.BOOKS.BOOKS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.BOOKS.BOOKS.SYS_IDX_U_PREVIOUSEDITION_10125"
+  }, {
+    "lint-id" : "b5b55ce0-7d24-4739-8991-1cb6bd2564a4",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.BOOKS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "PREVIOUSEDITIONID"
+  }, {
+    "lint-id" : "a1c78c35-5958-4777-9284-021aee27096f",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns@6a969fb8",
+    "message" : "no non-nullable data columns",
+    "object-name" : "PUBLIC.BOOKS.COUPONS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "58f0444d-252b-4010-bce6-6c2ee347b017",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.COUPONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "0777844f-fc29-413e-b72f-18125196f190",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.COUPONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, DATA, COUPONS, BOOKS"
+  }, {
+    "lint-id" : "e4e1348e-ad94-410a-aabf-c696edbbafe0",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns@6a969fb8",
+    "message" : "no non-nullable data columns",
+    "object-name" : "PUBLIC.BOOKS.CUSTOMERDATA",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "93146316-e53d-4c62-9f5c-84d690165767",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.BOOKS.CUSTOMERDATA",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "99882e99-3f73-4d76-a9c6-200c0d891762",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.CUSTOMERDATA",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "e9df8d1d-cc70-49d2-8778-b38faf4dfc17",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.CUSTOMERDATA",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, DATA"
+  }, {
+    "lint-id" : "5e6ae8ea-c623-475a-8ec5-e6b09ea38e4d",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.BOOKS.CUSTOMERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "5cb81ce3-89c2-42ba-ba9a-aa3644da64de",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.CUSTOMERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "18b16025-f781-4324-b99d-d23ce389bb1c",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.CUSTOMERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, FIRSTNAME, LASTNAME, AGE"
+  }, {
+    "lint-id" : "6e692595-5dac-4bb3-96cd-a7dfdc98584c",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns@6a969fb8",
+    "message" : "no non-nullable data columns",
+    "object-name" : "PUBLIC.BOOKS.PUBLISHERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "299127d2-bd3b-4e31-8f6c-54c29fd8acea",
+    "linter-id" : "schemacrawler.tools.linter.LinterForeignKeyMismatch",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterForeignKeyMismatch@551de37d",
+    "message" : "foreign key data type different from primary key",
+    "object-name" : "PUBLIC.BOOKS.ΒΙΒΛΊΑ",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "FK_ΒΙΒΛΊΑ_PUBLISHERS"
+  }, {
+    "lint-id" : "895036ce-41ff-4e9e-b958-5649045f0f4e",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.BOOKS.ΒΙΒΛΊΑ",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "5b909152-e89d-4fcc-b74e-18cdd923540a",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.ΒΙΒΛΊΑ",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "16b53621-7b95-458a-9b54-b0fa3e39c822",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.BOOKS.ΒΙΒΛΊΑ",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ΜΟΝΑΔΙΚΌΣ, ΤΊΤΛΟΣ, ΠΕΡΙΓΡΑΦΉ, ΕΚΔΌΤΗΣ"
+  }, {
+    "lint-id" : "fa38916d-2071-4eb3-bc24-6162cdc538a0",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoPrimaryKey@23ee75c5",
+    "message" : "no primary key",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "dea5b345-fb4e-4106-9e6c-6998883a1c75",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey@340b7ef6",
+    "message" : "primary key may not be a surrogate",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "9338cb88-ce13-4e49-b2bc-9cba24a6ecff",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableAllNullableColumns@6a969fb8",
+    "message" : "no non-nullable data columns",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "de35294e-d56b-4b92-9cdf-0d7e17811900",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoIndexes@56da52a7",
+    "message" : "no indexes",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "91766fa3-c209-420f-8917-21fb112a6462",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames@6050462a",
+    "message" : "spaces in name, or reserved word",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "176b349a-16de-4c5e-a979-5e6a0b1152dd",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames@6050462a",
+    "message" : "spaces in name, or reserved word",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "Global Count"
+  }, {
+    "lint-id" : "443dcde1-5b0c-4cde-ba56-d30d99f6ce32",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithSingleColumn",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithSingleColumn@4cbd03e7",
+    "message" : "single column",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : ""
+  }, {
+    "lint-id" : "ddb290d0-56a3-48bc-82e3-379d689fbbba",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "1d44954d-60f9-4aba-ae93-53265adb7ff6",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "76491b5f-c0f8-4e34-b220-ba9b98ed9160",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.\"Global Counts\"",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "Global Count"
+  }, {
+    "lint-id" : "0234d6f8-d211-4227-9bad-bb647fd89e39",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.FOR_LINT.EXTRA_PK",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "9e897917-59e2-4c54-a1d7-a9677b5aedd4",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.EXTRA_PK",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "WRITERID, PUBLICATIONID, ID"
+  }, {
+    "lint-id" : "10fae4aa-c103-4315-bb0e-2f58558423cc",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithPrimaryKeyNotFirst",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithPrimaryKeyNotFirst@30404dba",
+    "message" : "primary key not first",
+    "object-name" : "PUBLIC.FOR_LINT.EXTRA_PK",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "e0f4eba6-d21b-4430-90f4-b1f0c1c09fca",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithQuotedNames@6050462a",
+    "message" : "spaces in name, or reserved word",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "UPDATE"
+  }, {
+    "lint-id" : "2810ce0f-288e-4704-b2eb-f44a5a2a57b9",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "6be45388-012b-4db6-9190-c08d7f538b75",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "41ef04fd-d8c9-4686-888e-4ac4a2edd275",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, DESCRIPTION, WRITERID, PUBLICATIONDATE, PRICE, UPDATE, PRESS_RELEASE"
+  }, {
+    "lint-id" : "e6dae693-837c-47eb-af35-eb34e7e97919",
+    "linter-id" : "schemacrawler.tools.linter.LinterTooManyLobs",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTooManyLobs@52fc5eb1",
+    "message" : "too many binary objects",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "PUBLIC.FOR_LINT.PUBLICATIONS.\"UPDATE\", PUBLIC.FOR_LINT.PUBLICATIONS.PRESS_RELEASE"
+  }, {
+    "lint-id" : "4483beca-1903-4e5e-be79-9c34cacd64fc",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoSurrogatePrimaryKey@340b7ef6",
+    "message" : "primary key may not be a surrogate",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONWRITERS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : ""
+  }, {
+    "lint-id" : "8d98cf53-eadf-4545-81a0-2c8912dc69c8",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONWRITERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "e7d501eb-6008-4767-8f91-f7e267721d38",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONWRITERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "473bb087-4ba9-40eb-830a-c656eaf3291d",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.PUBLICATIONWRITERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "PUBLICATIONID, WRITERID"
+  }, {
+    "lint-id" : "d5483d3f-b7af-48f3-b8e5-31eb85c78aef",
+    "linter-id" : "schemacrawler.tools.linter.LinterForeignKeySelfReference",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterForeignKeySelfReference@6ef81f31",
+    "message" : "foreign key self-references primary key",
+    "object-name" : "PUBLIC.FOR_LINT.SELFREFERENCE",
+    "object-type" : "table",
+    "severity" : "critical",
+    "value" : "FK_SELFREFERENCE"
+  }, {
+    "lint-id" : "c3e5d5b2-d7de-4178-b342-2a4d0e7d910b",
+    "linter-id" : "schemacrawler.tools.linter.LinterRedundantIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterRedundantIndexes@273842a6",
+    "message" : "redundant index",
+    "object-name" : "PUBLIC.FOR_LINT.SELFREFERENCE",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "PUBLIC.FOR_LINT.SELFREFERENCE.SYS_IDX_FK_SELFREFERENCE_10210"
+  }, {
+    "lint-id" : "3e438b50-8626-44c2-9cbd-847eed179d73",
+    "linter-id" : "schemacrawler.tools.linter.LinterRedundantIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterRedundantIndexes@273842a6",
+    "message" : "redundant index",
+    "object-name" : "PUBLIC.FOR_LINT.SELFREFERENCE",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "PUBLIC.FOR_LINT.SELFREFERENCE.SYS_IDX_PK_SELFREFERENCE_10207"
+  }, {
+    "lint-id" : "077d7a6e-1831-40ab-a82a-e798c3ef6415",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.FOR_LINT.SELFREFERENCE",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "5c974c7b-7cfe-48e1-8067-4e0972211606",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.SELFREFERENCE",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "0595d75e-b1bf-4b46-b117-e0a75bac94ec",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.SELFREFERENCE",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, TITLE"
+  }, {
+    "lint-id" : "0c72f12d-8e4c-4876-92ac-dc7e117f77da",
+    "linter-id" : "schemacrawler.tools.linter.LinterForeignKeyMismatch",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterForeignKeyMismatch@551de37d",
+    "message" : "foreign key data type different from primary key",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "FK_WRITERS_PUBLICATION"
+  }, {
+    "lint-id" : "50e3b31b-3085-474f-b329-f3e44bfdad24",
+    "linter-id" : "schemacrawler.tools.linter.LinterRedundantIndexes",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterRedundantIndexes@273842a6",
+    "message" : "redundant index",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "high",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.IDX_A1_WRITERS"
+  }, {
+    "lint-id" : "fa8f21f0-5d85-431b-82c3-9c00f0d61f26",
+    "linter-id" : "schemacrawler.tools.linter.LinterNullColumnsInIndex",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterNullColumnsInIndex@33abde31",
+    "message" : "unique index with nullable columns",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.IDX_U_WRITERS"
+  }, {
+    "lint-id" : "3b94aead-9327-45e7-9a8e-ed4b9c57d555",
+    "linter-id" : "schemacrawler.tools.linter.LinterNullIntendedColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterNullIntendedColumns@997d532",
+    "message" : "column where NULL may be intended",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.ADDRESS2"
+  }, {
+    "lint-id" : "0ec9aa5b-a6f7-4785-8144-f747eaaa7516",
+    "linter-id" : "schemacrawler.tools.linter.LinterNullIntendedColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterNullIntendedColumns@997d532",
+    "message" : "column where NULL may be intended",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.COUNTRY"
+  }, {
+    "lint-id" : "cb340977-17aa-4cc7-b9c1-ed3163aaf7fc",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.ADDRESS1, PUBLIC.FOR_LINT.WRITERS.ADDRESS2"
+  }, {
+    "lint-id" : "753ed3e8-1ba7-4909-8ef1-d1d425882b6e",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.PHONE1, PUBLIC.FOR_LINT.WRITERS.PHONE2"
+  }, {
+    "lint-id" : "b74657c3-e6a1-4833-8896-de9602ae8d60",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.FAX, PUBLIC.FOR_LINT.WRITERS.FAX3"
+  }, {
+    "lint-id" : "9ee6104a-ce64-4633-93c6-7e0a6b0a4d93",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.EMAIL1, PUBLIC.FOR_LINT.WRITERS.EMAIL2"
+  }, {
+    "lint-id" : "6d430340-a7c8-4e4b-a2f7-5f89629cb123",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.HOMEEMAIL11, PUBLIC.FOR_LINT.WRITERS.HOMEEMAIL12"
+  }, {
+    "lint-id" : "536e61cc-4177-4888-b126-343c8c5e8ffd",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns are not consecutive",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.FAX, PUBLIC.FOR_LINT.WRITERS.FAX3"
+  }, {
+    "lint-id" : "635229d2-234e-42f9-8966-58fe287d9165",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns don't have the same data-type",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.PHONE1, PUBLIC.FOR_LINT.WRITERS.PHONE2"
+  }, {
+    "lint-id" : "9cf008e0-5e23-451a-b505-509095e063ba",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns don't have the same data-type",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.FAX, PUBLIC.FOR_LINT.WRITERS.FAX3"
+  }, {
+    "lint-id" : "9ea18946-5e2d-4385-bd57-e8095b22db96",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithIncrementingColumns@30b2b76f",
+    "message" : "incrementing columns don't have the same data-type",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "medium",
+    "value" : "PUBLIC.FOR_LINT.WRITERS.EMAIL1, PUBLIC.FOR_LINT.WRITERS.EMAIL2"
+  }, {
+    "lint-id" : "05edaaec-b23d-4fcd-8830-90332894940e",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableEmpty",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableEmpty@3028e50e",
+    "message" : "empty table",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "fc4189bb-f62e-4713-ac84-6d87d5593693",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : ""
+  }, {
+    "lint-id" : "e20c7812-2bc2-4e25-adcc-8043add2ee7a",
+    "linter-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks",
+    "linter-instance-id" : "schemacrawler.tools.linter.LinterTableWithNoRemarks@11a7ba62",
+    "message" : "should have remarks",
+    "object-name" : "PUBLIC.FOR_LINT.WRITERS",
+    "object-type" : "table",
+    "severity" : "low",
+    "value" : "ID, FIRSTNAME, LASTNAME, ADDRESS1, ADDRESS2, CITY, STATE, POSTALCODE, COUNTRY, PHONE1, PHONE2, EMAIL1, EMAIL2, FAX, FAX3, HOMEEMAIL11, HOMEEMAIL12, PUBLICATION_ID"
+  } ],
+  "title" : "Details of Example Database"
+}
