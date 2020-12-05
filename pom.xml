@@ -34,6 +34,7 @@
 
     <module>schemacrawler-dbtest</module>
     <module>schemacrawler-db2</module>
+    <module>schemacrawler-db2zos</module>
     <module>schemacrawler-hsqldb</module>
     <module>schemacrawler-mysql</module>
     <module>schemacrawler-oracle</module>
@@ -59,7 +60,7 @@
 
         <module>schemacrawler-docs</module>
         <module>schemacrawler-distrib</module>
-        <module>schemacrawler-docker</module>
+<!--        <module>schemacrawler-docker</module>-->
 		<module>schemacrawler-website</module>
 
       </modules>

@@ -161,7 +161,7 @@
             <goals>
               <goal>run</goal>
             </goals>
-          </execution>          
+          </execution>
           <execution>
             <id>make-main-distribution</id>
             <phase>package</phase>
@@ -240,6 +240,11 @@
                 <artifactItem>
                   <groupId>us.fatehi</groupId>
                   <artifactId>schemacrawler-db2</artifactId>
+                  <version>${project.version}</version>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>us.fatehi</groupId>
+                  <artifactId>schemacrawler-db2zos</artifactId>
                   <version>${project.version}</version>
                 </artifactItem>
                 <artifactItem>
